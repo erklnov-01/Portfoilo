@@ -1,0 +1,20 @@
+:root {
+  --bg: #fff; --bg-alt: #f6f6f7; --text: #111; --muted: #666; --line: #e6e6e8; --accent: #111;
+  --radius: 14px; --nav-h: 64px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -.02em; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); }
+h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+button { font: inherit; cursor: pointer; }
+a { color: inherit; }
+.container { width: min(1080px, 100% - 2.5rem); margin-inline: auto; }
+.narrow { max-width: 720px; }
+.section { padding: 5rem 0; scroll-margin-top: var(--nav-h); }
+.section--alt { background: var(--bg-alt); }
+.muted { color: var(--muted); }
+.lead { font-size: 1.1rem; color: #333; max-width: 60ch; }
+.eyebrow { color: var(--muted); margin: 0; }
+@media (max-width: 600px) { .section { padding: 3.5rem 0; } }
